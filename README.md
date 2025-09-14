@@ -169,17 +169,10 @@ npm run build-mac
 npm run build-linux
 ```
 
-## 📞 Suporte
-
-Para dúvidas ou suporte:
-- Email: suporte@financeiromkt.com
-- Documentação: [Wiki do projeto]
-- Issues: [GitHub Issues]
-
 ## 📄 Licença
 
 MIT License - veja arquivo LICENSE para detalhes.
 
 ---
 
-**FinanceiroMKT** - Desenvolvido para agências de marketing digital que precisam de controle financeiro completo e automatizado.
+**FinanceiroMKT** - Desenvolvido para agências de marketing digital que precisam de controle financeiro completo e automatizado. (Em fase de testes e manutenção)
