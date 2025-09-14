@@ -1,0 +1,36 @@
+{
+  "app": {
+    "name": "FinanceiroMKT",
+    "version": "1.0.0",
+    "port": 3000,
+    "host": "localhost"
+  },
+  "database": {
+    "type": "sqlite",
+    "path": "./data/financeiro_mkt.db",
+    "backup": true,
+    "backupInterval": 24
+  },
+  "security": {
+    "jwtSecret": "financeiro_mkt_secret_key_2024",
+    "tokenExpiry": "24h",
+    "passwordMinLength": 6
+  },
+  "features": {
+    "autoBackup": true,
+    "errorReporting": true,
+    "autoRestart": true,
+    "debugMode": false
+  },
+  "ui": {
+    "theme": "light",
+    "language": "pt-BR",
+    "currency": "BRL",
+    "dateFormat": "DD/MM/YYYY"
+  },
+  "limits": {
+    "maxFileSize": "10MB",
+    "maxRecords": 10000,
+    "sessionTimeout": 30
+  }
+}

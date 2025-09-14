@@ -1,0 +1,384 @@
+/* Responsive Design */
+
+/* Large screens (1200px and up) */
+@media (min-width: 1200px) {
+    .dashboard-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .dashboard-charts {
+        grid-template-columns: 2fr 1fr;
+    }
+    
+    .dashboard-activity {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Medium screens (768px to 1199px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .dashboard-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .dashboard-charts {
+        grid-template-columns: 1fr;
+    }
+    
+    .dashboard-activity {
+        grid-template-columns: 1fr;
+    }
+    
+    .main-content {
+        padding: var(--space-4);
+    }
+    
+    .page-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-4);
+    }
+    
+    .page-actions {
+        width: 100%;
+        justify-content: flex-end;
+    }
+}
+
+/* Small screens (768px and down) */
+@media (max-width: 768px) {
+    /* Layout */
+    .sidebar {
+        transform: translateX(-100%);
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    .sidebar.open {
+        transform: translateX(0);
+    }
+    
+    .main-content {
+        margin-left: 0;
+        padding: var(--space-4);
+    }
+    
+    /* Header */
+    .app-header {
+        padding: 0 var(--space-3);
+    }
+    
+    .header-center {
+        display: none;
+    }
+    
+    .header-right {
+        gap: var(--space-2);
+    }
+    
+    .app-logo span {
+        display: none;
+    }
+    
+    /* Dashboard */
+    .dashboard-cards {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+    
+    .chart-content {
+        height: 250px;
+        padding: var(--space-3);
+    }
+    
+    .chart-header {
+        padding: var(--space-3);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-2);
+    }
+    
+    .chart-controls {
+        width: 100%;
+    }
+    
+    .chart-controls select {
+        width: 100%;
+    }
+    
+    /* Activity */
+    .activity-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-2);
+        padding: var(--space-3);
+    }
+    
+    .activity-icon {
+        margin-right: 0;
+        margin-bottom: var(--space-2);
+    }
+    
+    .activity-value {
+        margin-left: 0;
+        align-self: flex-end;
+    }
+    
+    /* Cards */
+    .card-header {
+        padding: var(--space-3);
+    }
+    
+    .card-content {
+        padding: var(--space-3);
+    }
+    
+    .metric-value {
+        font-size: var(--font-size-2xl);
+    }
+    
+    /* Forms */
+    .form-group {
+        margin-bottom: var(--space-3);
+    }
+    
+    .form-input,
+    .form-select,
+    .form-textarea {
+        padding: var(--space-3);
+    }
+    
+    /* Buttons */
+    .btn {
+        padding: var(--space-3) var(--space-4);
+    }
+    
+    .btn-sm {
+        padding: var(--space-2) var(--space-3);
+    }
+    
+    .btn-lg {
+        padding: var(--space-4) var(--space-5);
+    }
+    
+    /* Tables */
+    .table-container {
+        overflow-x: auto;
+    }
+    
+    .table {
+        min-width: 600px;
+    }
+    
+    .table th,
+    .table td {
+        padding: var(--space-3);
+    }
+    
+    /* Modals */
+    .modal {
+        margin: var(--space-4);
+        max-height: calc(100vh - 2rem);
+    }
+    
+    .modal-header,
+    .modal-content,
+    .modal-footer {
+        padding: var(--space-4);
+    }
+    
+    /* Toast */
+    .toast-container {
+        top: var(--space-2);
+        right: var(--space-2);
+        left: var(--space-2);
+    }
+    
+    .toast {
+        min-width: auto;
+        max-width: none;
+    }
+    
+    /* Navigation */
+    .nav-link {
+        padding: var(--space-3) var(--space-4);
+    }
+    
+    .nav-section {
+        margin-bottom: var(--space-6);
+    }
+    
+    .nav-section h3 {
+        margin: 0 0 var(--space-3) var(--space-4);
+    }
+}
+
+/* Extra small screens (480px and down) */
+@media (max-width: 480px) {
+    /* Typography */
+    .page-header h1 {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .metric-value {
+        font-size: var(--font-size-xl);
+    }
+    
+    .card-header h3 {
+        font-size: var(--font-size-base);
+    }
+    
+    /* Spacing */
+    .main-content {
+        padding: var(--space-3);
+    }
+    
+    .dashboard-cards {
+        gap: var(--space-3);
+    }
+    
+    .dashboard-charts {
+        gap: var(--space-3);
+    }
+    
+    .dashboard-activity {
+        gap: var(--space-3);
+    }
+    
+    /* Cards */
+    .card-header,
+    .card-content {
+        padding: var(--space-3);
+    }
+    
+    /* Activity */
+    .activity-item {
+        padding: var(--space-3);
+    }
+    
+    .activity-title {
+        font-size: var(--font-size-sm);
+    }
+    
+    .activity-description {
+        font-size: var(--font-size-xs);
+    }
+    
+    /* Buttons */
+    .page-actions {
+        flex-direction: column;
+        gap: var(--space-2);
+    }
+    
+    .page-actions .btn {
+        width: 100%;
+    }
+    
+    /* Forms */
+    .form-input,
+    .form-select,
+    .form-textarea {
+        font-size: var(--font-size-sm);
+    }
+    
+    /* Modals */
+    .modal {
+        margin: var(--space-2);
+        max-height: calc(100vh - 1rem);
+    }
+    
+    .modal-header,
+    .modal-content,
+    .modal-footer {
+        padding: var(--space-3);
+    }
+}
+
+/* Print styles */
+@media print {
+    .sidebar,
+    .app-header,
+    .page-actions,
+    .btn,
+    .modal-overlay,
+    .toast-container {
+        display: none !important;
+    }
+    
+    .main-content {
+        margin-left: 0 !important;
+        padding: 0 !important;
+    }
+    
+    .page {
+        display: block !important;
+    }
+    
+    .card {
+        box-shadow: none !important;
+        border: 1px solid var(--border-color) !important;
+        break-inside: avoid;
+    }
+    
+    .chart-content {
+        height: auto !important;
+    }
+    
+    .table {
+        font-size: var(--font-size-xs);
+    }
+    
+    .table th,
+    .table td {
+        padding: var(--space-2);
+    }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+    :root {
+        --border-color: #000000;
+        --text-primary: #000000;
+        --text-secondary: #333333;
+        --bg-primary: #ffffff;
+        --bg-secondary: #f5f5f5;
+    }
+    
+    .card {
+        border: 2px solid var(--border-color);
+    }
+    
+    .btn {
+        border-width: 2px;
+    }
+    
+    .form-input,
+    .form-select,
+    .form-textarea {
+        border-width: 2px;
+    }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .loading-spinner {
+        animation: none;
+    }
+    
+    .toast {
+        animation: none;
+    }
+}
+
+/* Dark mode support (future enhancement) */
+@media (prefers-color-scheme: dark) {
+    /* This can be implemented later for dark mode support */
+}

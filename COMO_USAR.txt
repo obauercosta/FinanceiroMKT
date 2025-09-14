@@ -1,0 +1,79 @@
+========================================
+    FinanceiroMKT - Sistema Financeiro
+    Para Marketing Digital
+========================================
+
+COMO EXECUTAR O SISTEMA:
+
+1. EXECUTÁVEL PRINCIPAL (RECOMENDADO):
+   - Clique duas vezes em: EXECUTAR.bat
+   - Este é o método mais simples e direto
+
+2. EXECUTÁVEL COMPLETO (COM TRATAMENTO DE ERROS):
+   - Clique duas vezes em: FinanceiroMKT_Executavel.bat
+   - Este arquivo tem tratamento completo de erros
+
+3. EXECUTÁVEL POWERSHELL (AVANÇADO):
+   - Clique com botão direito em: FinanceiroMKT.ps1
+   - Selecione "Executar com PowerShell"
+   - Ou execute: powershell -ExecutionPolicy Bypass -File FinanceiroMKT.ps1
+
+PRÉ-REQUISITOS:
+- Node.js 16+ instalado (https://nodejs.org)
+- Windows 10 ou superior
+- Conexão com internet (apenas para instalação inicial)
+
+PRIMEIRO USO:
+1. Execute qualquer um dos arquivos .bat acima
+2. O sistema instalará as dependências automaticamente
+3. Aguarde a abertura da janela do aplicativo
+4. Use as credenciais:
+   - Email: admin@financeiromkt.com
+   - Senha: admin123
+
+FUNCIONALIDADES PRINCIPAIS:
+- Dashboard com métricas em tempo real
+- Gestão de receitas e despesas
+- Controle de clientes e contratos
+- Folha de pagamento com cálculos automáticos
+- Gestão de impostos (Simples Nacional)
+- Relatórios estratégicos (DRE, ROI, etc.)
+
+SOLUÇÃO DE PROBLEMAS:
+
+Se o aplicativo não iniciar:
+1. Verifique se o Node.js está instalado
+2. Execute como administrador
+3. Verifique se a porta 3000 está livre
+4. Desative temporariamente o antivírus
+5. Verifique se há espaço suficiente no disco
+
+Se der erro de dependências:
+1. Delete a pasta "node_modules"
+2. Execute novamente o arquivo .bat
+3. Aguarde a reinstalação completa
+
+Se der erro de banco de dados:
+1. Delete o arquivo "data/financeiro_mkt.db"
+2. Execute novamente o aplicativo
+3. O banco será recriado automaticamente
+
+ESTRUTURA DE ARQUIVOS:
+- EXECUTAR.bat - Executável principal (use este)
+- FinanceiroMKT_Executavel.bat - Executável com tratamento de erros
+- FinanceiroMKT.ps1 - Executável PowerShell
+- main.js - Arquivo principal do Electron
+- src/ - Interface do usuário
+- api/ - Backend e banco de dados
+- data/ - Dados do sistema (criado automaticamente)
+
+SUPORTE:
+- Verifique se todos os arquivos estão presentes
+- Execute sempre na pasta raiz do FinanceiroMKT
+- Mantenha o Node.js atualizado
+- Em caso de problemas, use o FinanceiroMKT_Executavel.bat
+
+========================================
+    Sistema desenvolvido para agências
+    de marketing digital
+========================================
